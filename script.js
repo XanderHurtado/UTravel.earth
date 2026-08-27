@@ -5,7 +5,7 @@ let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('banner-video',{
    events:{
-    onPlayerStateChange:pauseBannerVideo
+    onStateChange: pauseBannerVideo
    }
   });
 }
