@@ -11,8 +11,8 @@
 }
 #banner-play-button {
   position:absolute;
-  left:50cqh;
-  top:50cqh;
+  left:50vw;
+  top:calc(50vw * (16 / 9));
   transform: translate(-50%,-50%);
   width:10%;
 }
