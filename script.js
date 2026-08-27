@@ -16,7 +16,7 @@ function playBannerVideo() {
   player.playVideo();
 }
 function pauseBannerVideo(event) {
-  console.log(event);
-  if (event.data !== YT.PlayerState.PAUSED) return;
-  console.log("paused");
+  if (event.data !== YT.PlayerState.PAUSED && event.data !== YT.PlayerState.ENDED) return;
+  bannerStatic.style.display = "block";
+  bannerVideo.style.display = "none";
 }
