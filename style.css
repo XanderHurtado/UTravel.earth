@@ -1,10 +1,10 @@
 .banner-video {
   width:100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   display:none;
 }
 .banner-static-container {
-  aspect-ratio: 3 / 2;
+  width:100%;
   margin:0;
   display:block;
 }
