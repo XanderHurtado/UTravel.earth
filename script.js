@@ -9,5 +9,6 @@ function playBannerVideo() {
   if (!player) return;
   bannerStatic.style.display = "none";
   bannerVideo.style.display = "block";
+  console.log(player);
   player.playVideo();
 }
