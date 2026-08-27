@@ -17,6 +17,12 @@
   width:10%;
   cursor: pointer;
 }
+#banner-cover-image {
+  width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  object-position:center;
+}
 body {
   padding:0;
   margin:0;
