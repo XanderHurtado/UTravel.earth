@@ -1,11 +1,11 @@
 .banner-video {
   width:100%;
   aspect-ratio: 16 / 9;
+  display:none;
 }
-.banner-container {
-  padding:0;
+.banner-static-container {
   margin:0;
-  pointer-events:none;
+  display:block;
 }
 body {
   padding:0;
