@@ -1,9 +1,9 @@
-.banner-video {
+#banner-video {
   width:100%;
   aspect-ratio: 16 / 9;
   display:none;
 }
-.banner-static-container {
+#banner-static-container {
   aspect-ratio: 16 / 9;
   width:100%;
   margin:0;
