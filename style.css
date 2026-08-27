@@ -15,6 +15,7 @@
   top:calc(50vw / (16 / 9));
   transform: translate(-50%,0);
   width:10%;
+  cursor: pointer;
 }
 body {
   padding:0;
