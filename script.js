@@ -18,18 +18,14 @@ function bannerVideoStateChange(event) {
   if (event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING)) {
     bannerStatic.style.opacity = 0;
     bannerVideo.style.opacity = 1;
+    bannerVideo.style.display= "block";
     isShowingBannerVideo = true;
   }else{
     bannerStatic.style.opacity = 1;
+    bannerStatic.style.display = "block";
     bannerVideo.style.opacity = 0;
     isShowingBannerVideo = false;
   }
 }
 bannerVideo.addEventListener( "transitionend", event => {if (event.propertyName === "opacity") bannerVideo .style.display=window.getComputedStyle(bannerVideo ).opacity==="1"?"block":"none"})
-bannerStatic.addEventListener("transitionend", event => {
-  console.log("hello");
-  if (event.propertyName === "opacity") {
-    console.log(window.getComputedStyle(bannerStatic).opacity);
-    bannerStatic.style.display=window.getComputedStyle(bannerStatic).opacity==="1"?"block":"none"
-  }
-})
+bannerStatic.addEventListener("transitionend", event => {if (event.propertyName === "opacity") bannerStatic.style.display=window.getComputedStyle(bannerStatic).opacity==="1"?"block":"none"})
