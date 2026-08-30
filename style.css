@@ -12,13 +12,15 @@ body {
 #banner-video {
   width:100%;
   aspect-ratio: 16 / 9;
-  display:none;
+  opacity:0;
+  transition:opacity 0.3s linear;
 }
 #banner-static-container {
   aspect-ratio: 16 / 9;
   width:100%;
   margin:0;
-  display:block;
+  opacity:1;
+  transition:opacity 0.3s linear;
 }
 #banner-play-button {
   position:absolute;
