@@ -110,3 +110,6 @@ body {
 #banner-bottom-bar-left-menu:hover .banner-bar-drop-option {
   opacity:1;
 }
+#banner-bottom-bar-right-menu:hover .banner-bar-drop-option {
+  opacity:1;
+}
