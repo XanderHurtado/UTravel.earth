@@ -23,6 +23,12 @@
   object-fit:cover;
   object-position:center;
 }
+#banner-left-container {
+  position:absolute;
+  top:0;
+  left:0;
+  margin:2rem;
+}
 body {
   padding:0;
   margin:0;
