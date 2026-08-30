@@ -1,6 +1,9 @@
 body {
   font-family:'Big Caslon', serif;
 }
+#banner-container {
+  color:#303030;
+}
 #banner-video {
   width:100%;
   aspect-ratio: 16 / 9;
