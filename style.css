@@ -10,6 +10,7 @@ body {
   color:#303030;
 }
 #banner-video {
+  display:none;
   position:absolute;
   left:0;
   top:0;
@@ -19,6 +20,7 @@ body {
   transition:opacity 0.3s linear;
 }
 #banner-static-container {
+  display:block;
   position:absolute;
   left:0;
   top:0;
