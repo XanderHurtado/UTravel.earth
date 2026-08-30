@@ -67,6 +67,7 @@ body {
   border-radius:2rem;
 }
 #banner-bottom-bar-left-menu {
+  display:inline-block;
   width:50%;
   height:100%;
   border-radius:2rem;
@@ -78,6 +79,7 @@ body {
   height: calc( 100% + (4 * 2rem));
 }
 #banner-bottom-bar-right-menu {
+  display:inline-block;
   position:relative;
   right:0;
   width:50%;
