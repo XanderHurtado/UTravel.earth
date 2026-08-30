@@ -5,19 +5,23 @@ let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('banner-video',{
    events:{
-    onStateChange: pauseBannerVideo
+    onStateChange: bannerVideoStateChange
    }
   });
 }
 function playBannerVideo() {
   if (!player) return;
-  bannerStatic.style.display = "none";
-  bannerVideo.style.display = "block";
   player.playVideo();
 }
-function pauseBannerVideo(event) {
-  console.log(event.data);
-  if (event.data !== YT.PlayerState.PAUSED && event.data !== YT.PlayerState.ENDED) return;
-  bannerStatic.style.display = "block";
-  bannerVideo.style.display = "none";
+let isShowingBannerVideo = false;
+function bannerVideoStateChange(event) {
+  if (event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING) {
+    bannerStatic.style.display = "none";
+    bannerVideo.style.display = "block";
+    isShowingBannerVideo = true;
+  }else{
+    bannerStatic.style.display = "block";
+    bannerVideo.style.display = "none";
+    isShowingBannerVideo = false;
+  }
 }
