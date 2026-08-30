@@ -15,16 +15,17 @@ function playBannerVideo() {
 }
 let isShowingBannerVideo = false;
 function bannerVideoStateChange(event) {
-  if (event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING)) {
+  let pastIsShowing = isShowingBannerVideo;
+  isShowingBannerVideo = event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING);
+  if (pastIsShowing === isShowingBannerVideo) return;
+  if (isShowingBannerVideo) {
     bannerStatic.style.opacity = 0;
     bannerVideo.style.opacity = 1;
     bannerVideo.style.display= "block";
-    isShowingBannerVideo = true;
   }else{
     bannerStatic.style.opacity = 1;
     bannerStatic.style.display = "block";
     bannerVideo.style.opacity = 0;
-    isShowingBannerVideo = false;
   }
 }
 bannerVideo.addEventListener( "transitionend", event => {if (event.propertyName === "opacity") bannerVideo .style.display=window.getComputedStyle(bannerVideo ).opacity==="1"?"block":"none"})
