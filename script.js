@@ -25,3 +25,6 @@ function bannerVideoStateChange(event) {
     isShowingBannerVideo = false;
   }
 }
+bannerVideo.addEventListener("transitionend" event => {
+  console.log(event);
+}
