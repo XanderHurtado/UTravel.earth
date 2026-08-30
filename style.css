@@ -113,3 +113,11 @@ body {
 #banner-bottom-bar-right-menu:hover .banner-bar-drop-option {
   opacity:1;
 }
+#banner-bar-date-container {
+  width:calc(100% - 6rem);
+}
+#banner-end-date-container {
+  position:absolute;
+  top:0;
+  right:0;
+}
