@@ -76,3 +76,9 @@ body {
 #banner-bottom-bar-left-menu:hover {
   height: fit-content;
 }
+#banner-bottom-bar-left-menu .banner-bar-top {
+  position:relative;
+  top:2rem;
+  left:3rem;
+  transform: translate(0,-50%);
+}
