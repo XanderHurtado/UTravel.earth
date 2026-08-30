@@ -61,6 +61,7 @@ body {
   height:4rem;
   background-color:white;
   border-radius:2rem;
+  interpolate-size: allow-keywords;
 }
 #banner-bottom-bar-left-menu {
   width:50%;
@@ -74,5 +75,5 @@ body {
   height: fit-content;
 }
 #banner-bottom-bar-left-menu span {
-  margin:1rem;
+  margin:2rem;
 }
