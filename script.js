@@ -27,4 +27,4 @@ function bannerVideoStateChange(event) {
 }
 bannerVideo.addEventListener("transitionend" event => {
   console.log(event);
-}
+})
