@@ -49,6 +49,7 @@ body {
   top:0;
   right:0;
   margin:4rem;
+  text-align:right;
 }
 #banner-right-container a {
   margin-bottom:1rem;
