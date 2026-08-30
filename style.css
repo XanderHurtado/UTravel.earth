@@ -77,13 +77,26 @@ body {
 #banner-bottom-bar-left-menu:hover {
   height: calc( 100% + (4 * 2rem));
 }
-#banner-bottom-bar-left-menu .banner-bar-top {
+#banner-bottom-bar-right-menu {
+  position:relative;
+  right:0;
+  width:50%;
+  height:100%;
+  border-radius:2rem;
+  background-color:white;
+  overflow:hidden;
+  transition:height 0.4s ease-out;
+}
+#banner-bottom-bar-left-menu:hover {
+  height: calc( 100% + (4 * 2rem));
+}
+.banner-bar-top {
   position:relative;
   top:2rem;
   left:3rem;
   transform: translate(0,-50%);
 }
-#banner-bottom-bar-left-menu .banner-bar-drop-option {
+.banner-bar-drop-option {
   position:relative;
   top:3rem;
   left:3rem;
