@@ -51,14 +51,14 @@ body {
 #banner-bottom-container {
   position:absolute;
   left:50vw;
-  top:calc(70vw / (16 / 9));
+  top:calc(75vw / (16 / 9));
   transform: translate(-50%,-50%);
 }
 #banner-bottom-bar {
   width:60vw;
-  height:2rem;
+  height:4rem;
   background-color:white;
-  border-radius:1rem;
+  border-radius:2rem;
 }
 body {
   padding:0;
