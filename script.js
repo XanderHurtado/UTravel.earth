@@ -16,12 +16,12 @@ function playBannerVideo() {
 let isShowingBannerVideo = false;
 function bannerVideoStateChange(event) {
   if (event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING)) {
-    bannerStatic.style.display = "none";
-    bannerVideo.style.display = "block";
+    bannerStatic.style.opacity = 0;
+    bannerVideo.style.opacity = 1;
     isShowingBannerVideo = true;
   }else{
-    bannerStatic.style.display = "block";
-    bannerVideo.style.display = "none";
+    bannerStatic.style.opacity = 1;
+    bannerVideo.style.opacity = 0;
     isShowingBannerVideo = false;
   }
 }
