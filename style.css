@@ -17,13 +17,13 @@ body {
   aspect-ratio: 16 / 9;
   visibility:hidden;
   opacity:0;
-  transition:opacity 0.3s ease, visibility 0s ease;
+  transition:opacity 0.3s ease, visibility 0s ease 0.3s;
   z-index:1;
 }
 #banner-video.is-visible {
   opacity:1;
   visibility:visible;
-  transition: opacity 0.4s ease, visibility 0s ease 0.3s;
+  transition: opacity 0.3s ease, visibility 0s ease;
 }
 #banner-static-container {
   display:block;
