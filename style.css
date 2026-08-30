@@ -3,6 +3,9 @@ body {
   padding:0;
   margin:0;
 }
+:root {
+  interpolate-size: allow-keywords;
+}
 #banner-container {
   color:#303030;
 }
@@ -61,7 +64,6 @@ body {
   height:4rem;
   background-color:white;
   border-radius:2rem;
-  interpolate-size: allow-keywords;
 }
 #banner-bottom-bar-left-menu {
   width:50%;
@@ -73,7 +75,4 @@ body {
 }
 #banner-bottom-bar-left-menu:hover {
   height: fit-content;
-}
-#banner-bottom-bar-left-menu span {
-  margin:2rem;
 }
