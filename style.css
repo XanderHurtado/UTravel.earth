@@ -76,7 +76,7 @@ body {
   transition:height 0.4s ease-out;
 }
 #banner-bottom-bar-left-menu:hover {
-  height: calc( 100% + (4 * 2rem));
+  height: calc(100% + ((4 * 2rem) + 1rem));
 }
 #banner-bottom-bar-right-menu {
   display:inline-block;
@@ -91,7 +91,7 @@ body {
   transition:height 0.4s ease-out;
 }
 #banner-bottom-bar-right-menu:hover {
-  height: calc( 100% + (4 * 2rem));
+  height: calc( 100% + 3rem);
 }
 .banner-bar-top {
   position:relative;
