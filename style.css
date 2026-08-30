@@ -68,6 +68,8 @@ body {
   border-radius:2rem;
   background-color:white;
   overflow:hidden;
+  transition:height 0.4s ease-out;
+  padding:2rem;
 }
 #banner-bottom-bar-left-menu:hover {
   height: fit-content;
