@@ -26,5 +26,6 @@ function bannerVideoStateChange(event) {
   }
 }
 bannerVideo.addEventListener("transitionend", event => {
-  console.log(event);
+  if (event.propertyName !== "opacity") return;
+  console.log(window.getComputedStyle(bannerVideo).opacity);
 })
