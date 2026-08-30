@@ -29,6 +29,9 @@
   left:0;
   margin:2rem;
 }
+#nameplate-img {
+  width:40vw;
+}
 body {
   padding:0;
   margin:0;
