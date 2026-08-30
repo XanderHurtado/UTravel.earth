@@ -1,5 +1,7 @@
 body {
   font-family:'Big Caslon', serif;
+  padding:0;
+  margin:0;
 }
 #banner-container {
   color:#303030;
@@ -60,7 +62,12 @@ body {
   background-color:white;
   border-radius:2rem;
 }
-body {
-  padding:0;
-  margin:0;
+#banner-bottom-bar-left-menu {
+  width:50%;
+  height:100%;
+  border-radius:2rem;
+  background-color:gray;
+}
+#banner-bottom-bar-left-menu:hover {
+  height:20rem;
 }
