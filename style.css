@@ -36,7 +36,10 @@
   position:absolute;
   top:0;
   right:0;
-  margin:2rem;
+  margin:4rem;
+}
+#banner-right-container a {
+  margin-bottom:1rem;
 }
 body {
   padding:0;
