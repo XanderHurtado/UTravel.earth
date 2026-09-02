@@ -24,5 +24,5 @@ function bannerVideoStateChange(event) {
 const locationInput = document.getElementById("user-location-input");
 const locationOptions = [...document.querySelectorAll("#banner-bottom-bar-left-menu div.banner-bar-drop-option")];
 locationOptions.forEach(element => element.addEventListener("click",event => locationInput.value = element.textContent));
-locationInput.addEventListener("focus",event => locationInput.classList.add("expand"));
+locationInput.addEventListener("focus",event => {console.log("Hi");locationInput.classList.add("expand")});
 locationInput.addEventListener("blur",event => locationInput.classList.remove("expand"));
