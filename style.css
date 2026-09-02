@@ -92,7 +92,7 @@ body {
   overflow:hidden;
   transition:height 0.4s ease-out;
 }
-#banner-bottom-bar-left-menu:hover {
+#banner-bottom-bar-left-menu:hover, #banner-bottom-bar-left-menu.expand {
   height: calc(100% + ((4 * 2rem) + 1rem));
 }
 #banner-bottom-bar-right-menu {
@@ -142,7 +142,7 @@ body {
   box-sizing: border-box;
   width:100%;
   padding:1rem 0;
-  border:none;
+  //border:none;
   font-family:inherit;
   font-size:1rem;
   margin:0;
