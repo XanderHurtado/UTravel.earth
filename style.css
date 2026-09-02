@@ -110,17 +110,16 @@ body {
 #banner-bottom-bar-right-menu:hover {
   height: calc( 100% + 3rem);
 }
-.banner-bar-top {
+.banner-bar-top, .banner-bar-drop-option {
   display:flex;
   align-items:center;
   width:100%;
+  padding-left:2rem;
+}
+.banner-bar-top {
   height:4rem;
-  background-color:gray;
 }
 .banner-bar-drop-option {
-  position:relative;
-  top:3rem;
-  left:2rem;
   opacity:0;
   height:2rem;
   transition:opacity 0.6s ease-in-out;
