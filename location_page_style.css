@@ -2,6 +2,9 @@ body {
   padding:0;
   margin:0;
 }
+#banner-container {
+  height:fit-content;
+}
 #banner-image {
   width:100%;
 }
