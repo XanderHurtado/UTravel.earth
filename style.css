@@ -138,3 +138,7 @@ body {
   top:0;
   right:0;
 }
+.banner-bar-input {
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+}
