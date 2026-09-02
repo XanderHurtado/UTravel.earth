@@ -18,6 +18,10 @@ body {
   transform: translate(-50%,-50%);
   cursor: pointer;
 }
+.centered-text-container {
+  display:flex;
+  justify-content: center;
+}
 .centered-text {
   width:50%;
 }
