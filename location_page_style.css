@@ -24,4 +24,5 @@ body {
 }
 .centered-text {
   width:50%;
+  text-align:center;
 }
