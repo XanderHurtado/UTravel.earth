@@ -20,3 +20,7 @@ function bannerVideoStateChange(event) {
   if (pastIsShowing === isShowingBannerVideo) return;
   bannerVideo.classList.toggle('is-visible');
 }
+
+const locationInput = document.getElementById("user-location-input");
+const locationOptions = [...document.querySelectorAll("#banner-bottom-bar-left-menu div.banner-bar-drop-option")];
+locationOptions.forEach(element => element.addEventListener("click",event => locationInput.value = element.textContent));
