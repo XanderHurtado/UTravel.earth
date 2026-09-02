@@ -124,7 +124,7 @@ body {
   height:2rem;
   transition:opacity 0.6s ease-in-out;
 }
-#banner-bottom-bar-left-menu:hover .banner-bar-drop-option {
+#banner-bottom-bar-left-menu:hover .banner-bar-drop-option, #banner-bottom-bar-left-menu.expand .banner-bar-drop-option {
   opacity:1;
 }
 #banner-bottom-bar-right-menu:hover .banner-bar-drop-option {
