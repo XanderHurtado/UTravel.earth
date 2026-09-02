@@ -5,12 +5,16 @@ body {
 #banner-container {
   height:fit-content;
 }
-#banner-image {
+#banner--image {
   width:100%;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  object-position:center;
 }
 #banner-title {
   position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
+  left:50vw;
+  top:calc(50vw / (16 / 9));
+  transform: translate(-50%,-50%);
+  cursor: pointer;
 }
