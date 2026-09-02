@@ -115,6 +115,7 @@ body {
   top:2rem;
   left:2rem;
   transform: translate(0,-50%);
+  margin:0;
 }
 .banner-bar-drop-option {
   position:relative;
