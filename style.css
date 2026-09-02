@@ -141,7 +141,8 @@ body {
 .banner-bar-input {
   box-sizing: border-box;
   width:100%;
-  padding:0 1rem;
+  padding:1rem 0;
+  border:none;
   font-family:inherit;
   margin:0;
 }
