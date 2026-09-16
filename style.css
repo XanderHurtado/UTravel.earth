@@ -154,6 +154,6 @@ body {
   opacity:1;
 }
 #world-map: {
-  width:100%;
-  aspect-ratio: 16 / 9;
+  width:100vw;
+  height: calc( 100vw / (16 / 9));
 }
