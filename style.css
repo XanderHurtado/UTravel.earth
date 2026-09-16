@@ -153,7 +153,7 @@ body {
   color:inherit;
   opacity:1;
 }
-#world-map: {
+#world-map {
   width:100vw;
-  height: 300px;
+  height: calc( 100vw / (16 / 9));
 }
