@@ -40,12 +40,12 @@
   height:4rem;
 }
 .input-bar-header-icon {
-
+  margin-right:.5rem;
 }
 .input-bar-header-text {
   box-sizing: border-box;
   width:100%;
-  padding:1rem 0;
+  padding:.5rem 0;
   //border:none;
   font-family:inherit;
   font-size:1rem;
