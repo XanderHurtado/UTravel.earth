@@ -15,6 +15,7 @@ function playBannerVideo() {
 }
 let isShowingBannerVideo = false;
 function bannerVideoStateChange(event) {
+  console.log("hi");
   let pastIsShowing = isShowingBannerVideo;
   isShowingBannerVideo = event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING);
   if (pastIsShowing === isShowingBannerVideo) return;
