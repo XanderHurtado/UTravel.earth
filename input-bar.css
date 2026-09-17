@@ -36,7 +36,7 @@
   display:flex;
   align-items:center;
   width:100%;
-  padding-left:2rem;
+  padding-left:1rem;
   height:4rem;
 }
 .input-bar-header-icon {
@@ -45,7 +45,7 @@
 .input-bar-header-text {
   box-sizing: border-box;
   width:100%;
-  padding:.5rem 0;
+  padding:1rem 0;
   //border:none;
   font-family:inherit;
   font-size:1rem;
