@@ -28,8 +28,8 @@ locationOptions.forEach(element => element.addEventListener("click",event => loc
 locationInput.addEventListener("focus",event => locationMenuContainer.classList.add("expand"));
 locationInput.addEventListener("blur",event => locationMenuContainer.classList.remove("expand"));
 
-(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await a;g.start({key:e.get("key"),v:"alpha",...k});setTimeout(()=>n(Error(p+" could not load.")),2e4);d[l]=async(f,...n)=>d[l].then(async(f,...n)=>f(...n));f()}));if(d[l])console.warn(p+" only loads once.");else{a=new Promise((f,n)=>{var e=m.createElement("script");e.src=f;b[q]=u;e.onerror=()=>n(Error(p+" failed to load."));m.head.append(e)});d[l]=async(f,...n)=>{await u();return d[l](f,...n)}}}
-)(/* Adjust details as needed */);
+/*(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await a;g.start({key:e.get("key"),v:"alpha",...k});setTimeout(()=>n(Error(p+" could not load.")),2e4);d[l]=async(f,...n)=>d[l].then(async(f,...n)=>f(...n));f()}));if(d[l])console.warn(p+" only loads once.");else{a=new Promise((f,n)=>{var e=m.createElement("script");e.src=f;b[q]=u;e.onerror=()=>n(Error(p+" failed to load."));m.head.append(e)});d[l]=async(f,...n)=>{await u();return d[l](f,...n)}}}
+)();
 
 async function initMap() {
     // 1. Dynamically import the 3D library
@@ -43,4 +43,4 @@ async function initMap() {
 }
 
 // Fire the initialization routine
-initMap();
+initMap();*/
