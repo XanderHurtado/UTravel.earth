@@ -53,7 +53,7 @@
   color:inherit;
   outline:none;
 }
-input[type="text"].input-bar-text::placeholder {
+input[type="text"].input-bar-header-text::placeholder {
   color:inherit;
   opacity:1;
 }
