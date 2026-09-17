@@ -46,14 +46,14 @@
   box-sizing: border-box;
   width:100%;
   padding:1rem 0;
-  //border:none;
+  border:none;
   font-family:inherit;
   font-size:1rem;
   margin:0;
   color:inherit;
   outline:none;
 }
-input[type="text"].input-bar-input::placeholder {
+input[type="text"].input-bar-text::placeholder {
   color:inherit;
   opacity:1;
 }
