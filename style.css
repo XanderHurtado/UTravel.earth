@@ -3,9 +3,6 @@ body {
   padding:0;
   margin:0;
 }
-:root {
-  interpolate-size: allow-keywords;
-}
 #banner-container {
   color:#303030;
 }
@@ -84,4 +81,7 @@ body {
 #world-map-container {
   position:relative;
   top: calc( 100vw / (16 / 9));
+}
+.mouse-pointer {
+  cursor:pointer;
 }
