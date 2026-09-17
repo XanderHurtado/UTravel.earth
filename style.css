@@ -54,6 +54,7 @@ body {
   top:0;
   left:0;
   margin:4rem;
+  pointer-events:none;
 }
 #banner-logo-img {
   width:10vw;
