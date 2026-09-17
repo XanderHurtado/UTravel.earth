@@ -10,12 +10,13 @@ function onYouTubeIframeAPIReady() {
   });
 }
 function playBannerVideo() {
+  console.log("hi");
   if (!player) return;
+  console.log("hi1");
   player.playVideo();
 }
 let isShowingBannerVideo = false;
 function bannerVideoStateChange(event) {
-  console.log("hi");
   let pastIsShowing = isShowingBannerVideo;
   isShowingBannerVideo = event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING);
   if (pastIsShowing === isShowingBannerVideo) return;
