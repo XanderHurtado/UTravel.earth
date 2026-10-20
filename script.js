@@ -21,7 +21,7 @@ function bannerVideoStateChange(event) {
   isShowingBannerVideo = event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING);
   
   if (!isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING) {
-    let startVisualLoadTimeout = setTimeout(() => {
+    startVisualLoadTimeout = setTimeout(() => {
       document.getElementById("banner-play-button").classList.add("is-hidden");
       document.getElementById("banner-loading-spinner").classList.add("is-visible");
       console.log("loading");
