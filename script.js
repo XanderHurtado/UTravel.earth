@@ -29,16 +29,13 @@ function bannerVideoStateChange(event) {
     startVisualLoadTimeout = setTimeout(() => {
       document.getElementById("banner-play-button").classList.add("is-hidden");
       document.getElementById("banner-loading-spinner").classList.add("is-visible");
-      console.log("loading");
     },0);
   }
-  console.log(startVisualLoadTimeout,event.data,YT.PlayerState.PLAYING);
   if (startVisualLoadTimeout !== -1 && event.data === YT.PlayerState.PLAYING) {
     clearTimeout(startVisualLoadTimeout);
     startVisualLoadTimeout = -1;
     document.getElementById("banner-play-button").classList.remove("is-hidden");
     document.getElementById("banner-loading-spinner").classList.remove("is-visible");
-    console.log("hiding load");
   }
   
   if (pastIsShowing === isShowingBannerVideo) return;
