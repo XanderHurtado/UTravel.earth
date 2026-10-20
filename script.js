@@ -1,8 +1,9 @@
 const bannerVideo = document.getElementById("banner-video");
 const bannerStatic = document.getElementById("banner-static-container");
 
+//YouTube API
 let player;
-function onYouTubeIframeAPIReady() {
+window.onYouTubeIframeAPIReady = function() {
   player = new YT.Player('banner-video',{
    events:{
     onStateChange: bannerVideoStateChange
@@ -10,6 +11,10 @@ function onYouTubeIframeAPIReady() {
   });
   if (player) document.getElementById("banner-video-center").style.display="block";
 }
+//Create YouTube API script AFTER defining 'onYouTubeIframeAPIReady'
+var youtubeAPIScriptTag = document.createElement("script");
+youtubeAPIScriptTag.src = "https://www.youtube.com/iframe_api";
+document.getElementsByTagName("script")[0].parentNode.insertBefore(youtubeAPIScriptTag, document.getElementsByTagName("script")[0]);
 function playBannerVideo() {
   if (!player) return;
   player.playVideo();
