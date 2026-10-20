@@ -9,7 +9,7 @@ function onYouTubeIframeAPIReady() {
    }
   });
   console.log(player);
-  if (player) document.getElementById("banner-video-center").style.visibility="visible";
+  if (player) document.getElementById("banner-video-center").style.display="block";
 }
 function playBannerVideo() {
   if (!player) return;
