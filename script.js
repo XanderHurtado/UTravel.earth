@@ -8,6 +8,7 @@ function onYouTubeIframeAPIReady() {
     onStateChange: bannerVideoStateChange
    }
   });
+  console.log(player);
   if (player) document.getElementById("banner-video-center").style.visibility="visible";
 }
 function playBannerVideo() {
