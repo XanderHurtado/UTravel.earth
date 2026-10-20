@@ -34,13 +34,27 @@ body {
   transition:opacity 0.3s linear;
   z-index:0;
 }
-#banner-play-button {
+#banner-video-center {
   position:absolute;
   left:50vw;
   top:calc(50vw / (16 / 9));
   transform: translate(-50%,-50%);
   width:10%;
+  visibility:hidden;
+}
+#banner-play-button {
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
   cursor: pointer;
+  visibility:hidden;
+}
+#banner-loading-spinner {
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
   visibility:hidden;
 }
 #banner-cover-image {
