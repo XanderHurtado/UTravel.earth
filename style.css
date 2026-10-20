@@ -40,6 +40,7 @@ body {
   top:calc(50vw / (16 / 9));
   transform: translate(-50%,-50%);
   width:10%;
+  visibility:hidden;
 }
 #banner-play-button {
   position:absolute;
@@ -47,7 +48,14 @@ body {
   top:0;
   width:100%;
   cursor: pointer;
+  visibility:visible;
+  opacity:1;
+  transition: opacity 0.1s ease, visibility 0s ease;
+}
+#banner-play-button.is-hidden {
+  opacity:0;
   visibility:hidden;
+  transition: opacity 0.1s ease, visibility 0s ease 0.1s;
 }
 #banner-loading-spinner {
   position:absolute;
@@ -55,6 +63,13 @@ body {
   top:0;
   width:100%;
   visibility:hidden;
+  opacity:0;
+  transition:opacity 0.1s ease, visibility 0s ease 0.1s;
+}
+#banner-loading-spinner.is-visible {
+  opacity:1;
+  visibility:visible;
+  transition: opacity 0.1s ease, visibility 0s ease;
 }
 #banner-cover-image {
   width:100%;
