@@ -39,13 +39,14 @@ body {
   top:0;
   left:0;
   display:none;
+  width:10%;
 }
 #banner-play-button {
   position:absolute;
   left:50vw;
   top:calc(50vw / (16 / 9));
   transform: translate(-50%,-50%);
-  width:10%;
+  width:100%;
   cursor: pointer;
   visibility:visible;
   opacity:1;
@@ -61,7 +62,7 @@ body {
   left:50vw;
   top:calc(50vw / (16 / 9));
   transform: translate(-50%,-50%);
-  width:10%;
+  width:100%;
   visibility:hidden;
   opacity:0;
   transition:opacity 0.1s ease, visibility 0s ease 0.1s;
