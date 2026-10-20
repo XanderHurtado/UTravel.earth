@@ -11,15 +11,14 @@ function onYouTubeIframeAPIReady() {
   if (player) document.getElementById("banner-play-button").style.visibility="visible";
 }
 function playBannerVideo() {
-  console.log("hi");
   if (!player) return;
-  console.log("hi1");
   player.playVideo();
 }
 let isShowingBannerVideo = false;
 function bannerVideoStateChange(event) {
   let pastIsShowing = isShowingBannerVideo;
   isShowingBannerVideo = event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING);
+  console.log(event.data);
   if (pastIsShowing === isShowingBannerVideo) return;
   bannerVideo.classList.toggle('is-visible');
 }
