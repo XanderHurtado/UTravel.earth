@@ -29,7 +29,7 @@ function bannerVideoStateChange(event) {
     startVisualLoadTimeout = setTimeout(() => {
       document.getElementById("banner-play-button").classList.add("is-hidden");
       document.getElementById("banner-loading-spinner").classList.add("is-visible");
-    },500);
+    },250);
   }
   if (startVisualLoadTimeout !== -1 && event.data === YT.PlayerState.PLAYING) {
     clearTimeout(startVisualLoadTimeout);
