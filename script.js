@@ -8,7 +8,6 @@ function onYouTubeIframeAPIReady() {
     onStateChange: bannerVideoStateChange
    }
   });
-  console.log(player);
   if (player) document.getElementById("banner-video-center").style.display="block";
 }
 function playBannerVideo() {
@@ -26,7 +25,7 @@ function bannerVideoStateChange(event) {
       document.getElementById("banner-play-button").classList.add("is-hidden");
       document.getElementById("banner-loading-spinner").classList.add("is-visible");
       console.log("loading");
-    },750);
+    },0);
   }
   console.log(startVisualLoadTimeout,event.data,YT.PlayerState.PLAYING);
   if (startVisualLoadTimeout !== -1 && event.data === YT.PlayerState.PLAYING) {
