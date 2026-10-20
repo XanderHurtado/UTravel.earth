@@ -15,12 +15,28 @@ function playBannerVideo() {
   player.playVideo();
 }
 let isShowingBannerVideo = false;
+let startVisualLoadTimeout = -1;
 function bannerVideoStateChange(event) {
   let pastIsShowing = isShowingBannerVideo;
   isShowingBannerVideo = event.data === YT.PlayerState.PLAYING || (isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING);
-  console.log(event.data);
+  
+  if (!isShowingBannerVideo && event.data === YT.PlayerState.BUFFERING) {
+    let startVisualLoadTimeout = setTimeout(() => {
+      document.getElementById("banner-play-button").classList.add("is-hidden");
+      document.getElementById("banner-loading-spinner").classList.add("is-visible");
+      console.log("loading");
+    },750);
+  }
+  if (startVisualLoadTimeout !== -1 && event.data === YT.PlayerState.PLAYING) {
+    clearTimeout(startVisualLoadTimeout);
+    startVisualLoadTimeout = -1;
+    document.getElementById("banner-play-button").classList.remove("is-hidden");
+    document.getElementById("banner-loading-spinner").classList.remove("is-visible");
+    console.log("hiding load");
+  }
+  
   if (pastIsShowing === isShowingBannerVideo) return;
-  bannerVideo.classList.toggle('is-visible');
+  bannerVideo.classList.toggle("is-visible",isShowingBannerVideo);
 }
 
 const locationInput = document.getElementById("user-location-input");
