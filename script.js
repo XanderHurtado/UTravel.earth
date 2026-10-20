@@ -27,6 +27,7 @@ function bannerVideoStateChange(event) {
       console.log("loading");
     },750);
   }
+  console.log(startVisualLoadTimeout,event.data,YT.PlayerState.PLAYING);
   if (startVisualLoadTimeout !== -1 && event.data === YT.PlayerState.PLAYING) {
     clearTimeout(startVisualLoadTimeout);
     startVisualLoadTimeout = -1;
