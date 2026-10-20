@@ -40,7 +40,6 @@ body {
   top:calc(50vw / (16 / 9));
   transform: translate(-50%,-50%);
   width:10%;
-  visibility:hidden;
 }
 #banner-play-button {
   position:absolute;
