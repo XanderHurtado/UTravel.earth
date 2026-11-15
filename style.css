@@ -109,6 +109,7 @@ body {
   position:relative;
   background-color:blue;
   height:15vw;
+  font-size: calc(1 * 1vw);
 }
 #location-banner .input-bar {
   position:absolute;
