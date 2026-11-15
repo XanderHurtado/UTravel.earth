@@ -116,7 +116,7 @@ body {
   left:50%;
   top:50%;
   transform: translate(-50%, -50%);
-  width:max(50vw,20rem);
+  width:min(max(50vw,20rem),95vw);
 }
 #world-map {
   width:100vw;
