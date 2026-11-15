@@ -108,14 +108,14 @@ body {
 #location-banner {
   position:relative;
   background-color:blue;
-  height:10vw;
+  height:15vw;
 }
 #location-banner .input-bar {
   position:absolute;
   left:50%;
   top:50%;
   transform: translate(-50%, -50%);
-  width:90vw;
+  width:85vw;
 }
 #world-map {
   width:100vw;
