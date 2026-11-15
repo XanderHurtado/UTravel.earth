@@ -105,11 +105,8 @@ body {
 #banner-right-container a {
   margin-bottom:1rem;
 }
-#banner-bottom-container {
-  position:absolute;
-  left:50vw;
-  top:calc(75vw / (16 / 9));
-  transform: translate(-50%,-50%);
+#location-banner {
+  position:relative;
 }
 #world-map {
   width:100vw;
