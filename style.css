@@ -108,7 +108,7 @@ body {
 #location-banner {
   position:relative;
   background-color:blue;
-  height:30vw;
+  height:10vw;
 }
 #location-banner .input-bar {
   position:absolute;
