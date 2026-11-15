@@ -107,6 +107,7 @@ body {
 }
 #location-banner {
   position:relative;
+  background-color:blue;
 }
 #world-map {
   width:100vw;
