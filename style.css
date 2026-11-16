@@ -110,6 +110,7 @@ body {
   color:white;
   transform:translate(-50%,0);
   width:100vw;
+  text-align:center;
 }
 #location-banner {
   position:relative;
