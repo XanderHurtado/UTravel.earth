@@ -106,9 +106,10 @@ body {
   top:0;
   left:50vw;
   pointer-events:none;
-  color:white;
+  color:black;
   transform:translate(-50%,0);
   text-align:center;
+  text-shadow: 0 0 1em white;
 }
 #banner-top-title h1 {
   font-size:1.5rem;
