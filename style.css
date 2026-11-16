@@ -108,7 +108,7 @@ body {
   margin:4rem;
   pointer-events:none;
   color:white;
-  transform:translate(-50%,0);
+  //transform:translate(-50%,0);
   width:100vw;
   text-align:center;
 }
