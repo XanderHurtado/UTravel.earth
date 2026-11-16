@@ -101,9 +101,9 @@ body {
   margin-bottom:1rem;
 }
 #banner-top-title {
-  letter-spacing:0.1em;
+  letter-spacing:0.05em;
   position:absolute;
-  top:2vw;
+  top:0;
   left:50vw;
   margin:4rem;
   pointer-events:none;
