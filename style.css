@@ -111,10 +111,10 @@ body {
   text-align:center;
 }
 #banner-top-title h1 {
-  font-size:1rem;
+  font-size:1.5rem;
 }
 #banner-top-title p {
-  font-size:0.3rem;
+  font-size:1rem;
 }
 #location-banner {
   position:relative;
