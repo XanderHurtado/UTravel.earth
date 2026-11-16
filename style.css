@@ -110,9 +110,13 @@ body {
   transform:translate(-50%,0);
   text-align:center;
   text-shadow: 0 0 0.5em white,
-    0 0 0.5em white,
-    0 0 0.5em white,
-    0 0 0.5em white;
+    0 0 0.8em white,
+    0 0 0.8em white,
+    0 0 0.8em white,
+    0 0 0.8em white,
+    0 0 0.8em white,
+    0 0 0.8em white,
+    0 0 0.8em white;
 }
 #banner-top-title h1 {
   font-size:1.5rem;
