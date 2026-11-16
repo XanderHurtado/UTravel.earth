@@ -84,13 +84,11 @@ body {
   object-fit:cover;
   object-position:center;
 }
-#banner-left-container {
-  position:absolute;
-  top:0;
-  left:0;
-}
 #banner-logo-img {
+  position:absolute;
   width:10vw;
+  top:5vw;
+  left:10vw;
 }
 #banner-right-container {
   position:absolute;
