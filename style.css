@@ -112,6 +112,12 @@ body {
   width:100vw;
   text-align:center;
 }
+#banner-top-title h1 {
+  font-size:1rem;
+}
+#banner-top-title p {
+  font-size:0.3rem;
+}
 #location-banner {
   position:relative;
   background-color:#00325a;
