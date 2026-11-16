@@ -41,7 +41,7 @@ body {
 #banner-play-button {
   position:absolute;
   left:50vw;
-  top:calc(47vw / (16 / 9));
+  top:calc(46vw / (16 / 9));
   transform: translate(-50%,-50%);
   width:100%;
   cursor: pointer;
@@ -57,7 +57,7 @@ body {
 #banner-loading-spinner {
   position:absolute;
   left:50vw;
-  top:calc(47vw / (16 / 9));
+  top:calc(46vw / (16 / 9));
   transform: translate(-50%,-50%);
   width:100%;
   visibility:hidden;
