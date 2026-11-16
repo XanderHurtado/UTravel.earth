@@ -107,7 +107,7 @@ body {
   left:50vw;
   pointer-events:none;
   color:white;
-  //transform:translate(-50%,0);
+  transform:translate(-50%,0);
   text-align:center;
 }
 #banner-top-title h1 {
