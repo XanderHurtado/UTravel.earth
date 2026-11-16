@@ -105,10 +105,12 @@ body {
 #banner-top-title {
   letter-spacing:0.1em;
   position:absolute;
-  top:0;
-  left:0;
+  top:50vw;
+  left:50vw;
   margin:4rem;
   pointer-events:none;
+  color:white;
+  transform:translate(-50%,-50%);
 }
 #location-banner {
   position:relative;
