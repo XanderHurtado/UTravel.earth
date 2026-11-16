@@ -85,12 +85,9 @@ body {
   object-position:center;
 }
 #banner-left-container {
-  letter-spacing:0.1em;
   position:absolute;
   top:0;
   left:0;
-  margin:4rem;
-  pointer-events:none;
 }
 #banner-logo-img {
   width:10vw;
@@ -104,6 +101,14 @@ body {
 }
 #banner-right-container a {
   margin-bottom:1rem;
+}
+#banner-top-title {
+  letter-spacing:0.1em;
+  position:absolute;
+  top:0;
+  left:0;
+  margin:4rem;
+  pointer-events:none;
 }
 #location-banner {
   position:relative;
