@@ -6,6 +6,7 @@
   height:4em;
   background-color:white;
   border-radius:2em;
+  --option-amount: 4;
 }
 .input-bar-menu {
   width:50%;
@@ -16,7 +17,7 @@
   transition:height 0.4s ease-out;
 }
 .input-bar-menu:is(:hover, .expand) {
-  height: calc(100% + ((4 * 2em) + 1em));
+  height: calc(100% + ((var(--option-amount) * 2em) + 1em));
 }
 /*#banner-bottom-bar-right-menu:hover {
   height: calc( 100% + 3rem);
