@@ -149,7 +149,7 @@ body {
   position:relative;
   background-color:#00325a;
   height:min(42vw,12rem);
-  font-size: min(1.5vw,1rem);
+  font-size: min(2vw,1rem);
 }
 #location-banner .input-bar {
   position:absolute;
