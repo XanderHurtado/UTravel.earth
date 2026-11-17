@@ -112,7 +112,7 @@ body {
   white-space:nowrap;
 }
 #banner-top-title h1 {
-  font-size:3rem;
+  font-size:3.33vw;
   text-shadow: 0 0 0.8em white,
     0 0 0.8em white,
     0 0 0.8em white,
@@ -127,7 +127,7 @@ body {
     0 0 0.8em white;
 }
 #banner-top-title h2 {
-  font-size:1rem;
+  font-size:1.11vw;
   text-shadow: 0 0 0.8em white,
     0 0 0.8em white,
     0 0 0.8em white,
