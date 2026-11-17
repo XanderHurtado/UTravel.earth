@@ -109,6 +109,7 @@ body {
   color:black;
   transform:translate(-50%,0);
   text-align:center;
+  white-space:nowrap;
 }
 #banner-top-title h1 {
   font-size:3rem;
