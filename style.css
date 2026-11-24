@@ -5,6 +5,7 @@ body {
 }
 #banner-container {
   color:#303030;
+  position:relative;
 }
 #banner-video {
   position:absolute;
