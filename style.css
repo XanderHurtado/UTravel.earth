@@ -162,6 +162,9 @@ body {
   transform: translate(-50%, -50%);
   width:min(max(50vw,20rem),95vw);
 }
+#input-bar-single-message {
+  width:100%;
+}
 #world-map {
   width:100vw;
   height: calc( 100vw / (16 / 9));
